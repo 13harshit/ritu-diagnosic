@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+
 /* ==========================================================================
    THEME: ROYAL INSTITUTIONAL (Heritage + Modern Luxury)
    Colors: Oxford Blue, Champagne Gold, Porcelain White
@@ -159,5 +162,4 @@ input:focus, select:focus, textarea:focus {
 .text-center { text-align: center; }
 .mt-4 { margin-top: 4rem; }
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+

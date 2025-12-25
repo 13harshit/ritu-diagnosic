@@ -1,0 +1,163 @@
+/* ==========================================================================
+   THEME: ROYAL INSTITUTIONAL (Heritage + Modern Luxury)
+   Colors: Oxford Blue, Champagne Gold, Porcelain White
+   ========================================================================== */
+
+:root {
+    /* --- COLOR PALETTE --- */
+    --color-primary:      #0B2545; /* Oxford Blue (Authority, Legacy) */
+    --color-primary-dark: #06152a; /* Darker Navy for gradients/footers */
+    --color-accent:       #C5A059; /* Champagne Gold (Luxury) */
+    --color-accent-hover: #B08D55; /* Darker Gold for interaction */
+    
+    --color-bg-body:      #F8F9FA; /* Porcelain (Clean, Modern) */
+    --color-bg-offset:    #E9ECEF; /* Light Grey (Section separation) */
+    --color-white:        #FFFFFF;
+    
+    --color-text-main:    #333333; /* Charcoal */
+    --color-text-muted:   #6c757d; /* Grey text */
+    --color-border:       #DEE2E6; 
+
+    /* --- TYPOGRAPHY --- */
+    --font-heading:       'Playfair Display', Georgia, serif; 
+    --font-body:          'Lato', 'Open Sans', sans-serif;
+
+    /* --- SPACING & SHADOWS --- */
+    --shadow-soft:        0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-hover:       0 15px 30px rgba(11, 37, 69, 0.15);
+    --radius-main:        4px; /* Small radius for professional look */
+}
+
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 { font-size: 3.5rem; letter-spacing: -1px; }
+h2 { font-size: 2.5rem; letter-spacing: -0.5px; }
+h3 { font-size: 1.75rem; }
+
+p { margin-bottom: 1rem; }
+
+/* The "Eyebrow" text (small uppercase text above headers) */
+.text-overline {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: var(--radius-main);
+    font-family: var(--font-body);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Gold Button (Primary) */
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+}
+
+/* Navy Button (Secondary / Outline) */
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ==========================================================================
+   LAYOUT SECTIONS
+   ========================================================================== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ==========================================================================
+   FORMS (Booking/Search)
+   ========================================================================== */
+input, select, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-main);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-main);
+    background: var(--color-white);
+    transition: border 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(11, 37, 69, 0.1);
+}
+
+/* ==========================================================================
+   UTILITIES
+   ========================================================================== */
+.bg-light { background-color: var(--color-bg-offset); }
+.text-center { text-align: center; }
+.mt-4 { margin-top: 4rem; }
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
